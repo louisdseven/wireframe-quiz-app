@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width">
+        <title>Quick Trivia</title>
+        <link rel="stylesheet" href="question.css" type="text/css"/>
+    </head>
+    <body background="Aurora-Background-HD.jpg">
+        <br>
+        <!--Below h1 element is here for making the page for wireframe-->
+        <!--It will not be on the finished product-->
+        <h1 class="comments">Question Page</h1>
+        
+        <br>
+        <hr>
+        <nav class="navbar">
+            <h1 class="welcome">Here is a good one:</h1>
+        </nav>
+        <main>
+            <section role="starting page" class="startPage">
+                <form name="quizForm" onsubmit="return submitAnswers()">
+                    <h3>First question will go here</h3>
+                    <div class="box">
+                        <input type="radio" name="q1" value="a" id="q1a"> a. sample answer to q1 <br>
+                        <input type="radio" name="q1" value="b" id="q1b"> b. sample answer to q1 <br>
+                        <input type="radio" name="q1" value="c" id="q1c"> c. sample answer to q1 <br>
+                        <input type="radio" name="q1" value="d" id="q1d"> d. sample answer to q1 <br>
+                        <input type="radio" name="q1" value="e" id="q1e"> e. sample answer to q1 <br>
+                    </div>
+                </form>
+            </section>
+            <section class="btn">    
+                <button class="submitBtn">SUBMIT</button>
+            </section>
+        </main>
+        <footer>
+            <div class="currentScore">
+                <ul>
+                    <li>Question: 1/10</li>
+                    <li>Score: 0</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

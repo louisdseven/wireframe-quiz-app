@@ -1,0 +1,48 @@
+* {
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+.comments {
+    color: rgb(5, 78, 2);
+    padding-bottom: 40px;
+}
+
+nav {
+    background-color:rgb(211, 146, 6);
+    color: rgb(51, 38, 3);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.fireworks {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(211, 146, 6);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

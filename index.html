@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quick Trivia</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width">
+        <link rel="stylesheet" href="main.css" type="text/css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="datastore.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <hr>
+        <br>
+        <h1 class="blue">Starting Page</h1>
+
+        <section role="starting page" id="start-page">
+            <h1>Starting Page</h1>
+            <div id="start-title"><h1>Welcome to my trivia!</h1></div>
+            <div id="intro-page">
+                <p>A quick, 10-question trivia. <br>
+                    <br>
+                <b>Are you up for it!?</b></p>
+            </div>
+            <div id="start-page-button">
+                <button id="js-start-button">START</button>
+            </div>
+        </section>
+        <br>
+        <hr>
+        <br>
+        <h1 class="blue">Question Page</h1>
+
+        <section id="question" role="js rendered question set">
+            <div class="current-score">
+                <ul>
+                    <li>Question: <span class="question-number">1</span>/10</li>
+                    <li>Score: <span class="score">0</span></li>
+                </ul>
+            </div>
+            <h1>Question:</h1>
+            <form name="quizForm" onsubmit="return submitAnswers()">
+                <div class="box">
+                <h3>First question will go here</h3>
+                    <input type="radio" name="q1" value="a" id="q1a"> a. sample answer to q1 <br>
+                    <input type="radio" name="q1" value="b" id="q1b"> b. sample answer to q1 <br>
+                    <input type="radio" name="q1" value="c" id="q1c"> c. sample answer to q1 <br>
+                    <input type="radio" name="q1" value="d" id="q1d"> d. sample answer to q1 <br>
+                    <input type="radio" name="q1" value="e" id="q1e"> e. sample answer to q1 <br>
+                </div>
+            </form>
+            <div id="submit-button">
+                <button id="js-submit-button">SUBMIT</button>
+            </div>
+        </section>
+        <br>
+        <hr>
+        <br>
+        <h1 class="blue">Wrong Answer Page</h1>
+
+        <section id="feedback-page" role="main">
+            <h1>Didn't get it quite right</h1>
+            <!--will insert a photo or a giphy here-->
+            <h2>Sorry! The right answer is: ${ANSWERS[questionNum - 1]}</h2>
+            <br>
+            <button id="js-next-button">NEXT</button>
+        </section>
+        <br>
+        <hr>
+        <br>
+        <h1 class="blue">Right Answer Page</h1>
+
+        <section id="feedback-page" role="main">
+                <h1>CONGRATULATIONS</h1>
+                <!--will insert a photo or a giphy here-->
+                <h2>You are correct! The right answer is: ${ANSWERS[questionNum - 1]}</h2>
+                <br>
+                <button id="js-next-button">NEXT</button>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <h1 class="blue">Final Result Page</h1>
+
+        <section id="final-page">
+                <h1>Results:</h1>
+                <!--will insert a photo or a giphey here-->
+                <h2>Final Score: ${correctAnswers} out of 10</h2>
+                <br>
+                <button id="js-restart-button">Try Again?</button>
+            </section>
+    </body>
+
+</html>
